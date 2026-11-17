@@ -1,0 +1,652 @@
+{
+  "synthetic_data": true,
+  "dataset": "Summitline Outdoors support corpus (synthetic, hand-written for this project)",
+  "corpus_docs": 24,
+  "eval_questions": 18,
+  "k": 3,
+  "retrievers": {
+    "bm25": {
+      "metrics": {
+        "n_questions": 18,
+        "recall_at_k": 0.9444444444444444,
+        "citation_precision": 0.8333333333333334,
+        "answer_accuracy": 0.7777777777777778,
+        "mean_token_f1": 0.32129444444444444,
+        "quote_fidelity": 1.0
+      },
+      "per_question": [
+        {
+          "id": "q01",
+          "question": "How much does the RidgeTent 2P weigh?",
+          "gold_answer": "1.9 kg",
+          "predicted_answer": "The RidgeTent 2P carries a lifetime warranty against manufacturing defects.",
+          "cited_doc": "tent-warranty",
+          "retrieved_top_k": [
+            "tent-warranty",
+            "tent-setup",
+            "tent-care"
+          ],
+          "retrieved_relevant": false,
+          "citation_correct": false,
+          "answer_correct": false,
+          "token_f1": 0.0,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q02",
+          "question": "What is the waterproof rating of the RidgeTent 2P?",
+          "gold_answer": "3000mm waterproof rating",
+          "predicted_answer": "It uses 20D ripstop nylon with a 3000mm waterproof rating.",
+          "cited_doc": "tent-spec",
+          "retrieved_top_k": [
+            "tent-spec",
+            "tent-setup",
+            "jacket-spec"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.4615,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q03",
+          "question": "How long does it take to pitch the RidgeTent 2P?",
+          "gold_answer": "5 minutes",
+          "predicted_answer": "The RidgeTent 2P carries a lifetime warranty against manufacturing defects.",
+          "cited_doc": "tent-warranty",
+          "retrieved_top_k": [
+            "tent-warranty",
+            "tent-care",
+            "tent-setup"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": false,
+          "answer_correct": false,
+          "token_f1": 0.0,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q04",
+          "question": "What does the RidgeTent 2P warranty exclude?",
+          "gold_answer": "UV damage or misuse",
+          "predicted_answer": "The RidgeTent 2P carries a lifetime warranty against manufacturing defects.",
+          "cited_doc": "tent-warranty",
+          "retrieved_top_k": [
+            "tent-warranty",
+            "tent-setup",
+            "tent-care"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": false,
+          "token_f1": 0.0,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q05",
+          "question": "What capacity is the TrailPack 45?",
+          "gold_answer": "45 liter",
+          "predicted_answer": "The TrailPack 45 is a 45 liter backpack weighing 1.4 kg.",
+          "cited_doc": "pack-spec",
+          "retrieved_top_k": [
+            "pack-spec",
+            "pack-fit",
+            "pack-warranty"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.2857,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q06",
+          "question": "How long is the TrailPack 45 warranty?",
+          "gold_answer": "5 year warranty",
+          "predicted_answer": "The TrailPack 45 has a 5 year warranty covering zippers and seams.",
+          "cited_doc": "pack-warranty",
+          "retrieved_top_k": [
+            "pack-warranty",
+            "pack-spec",
+            "pack-fit"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.4,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q07",
+          "question": "How long does the EmberStove take to boil a liter of water?",
+          "gold_answer": "3.5 minutes",
+          "predicted_answer": "The EmberStove weighs 98 g and boils 1 liter of water in 3.5 minutes.",
+          "cited_doc": "stove-spec",
+          "retrieved_top_k": [
+            "stove-spec",
+            "recall-2025",
+            "tent-warranty"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.3333,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q08",
+          "question": "What kind of canister does the EmberStove use?",
+          "gold_answer": "isobutane canisters",
+          "predicted_answer": "It works with standard isobutane canisters.",
+          "cited_doc": "stove-spec",
+          "retrieved_top_k": [
+            "stove-spec",
+            "stove-safety",
+            "stove-fuel"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.5,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q09",
+          "question": "Can the EmberStove be used inside a tent?",
+          "gold_answer": "Never use the EmberStove inside a tent",
+          "predicted_answer": "Never use the EmberStove inside a tent or enclosed space.",
+          "cited_doc": "stove-safety",
+          "retrieved_top_k": [
+            "stove-safety",
+            "gift-cards",
+            "tent-setup"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.8235,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q10",
+          "question": "How long does a 230g canister last on the EmberStove?",
+          "gold_answer": "60 minutes",
+          "predicted_answer": "A 230g isobutane canister lasts about 60 minutes on high with the EmberStove.",
+          "cited_doc": "stove-fuel",
+          "retrieved_top_k": [
+            "stove-fuel",
+            "stove-spec",
+            "stove-safety"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.2667,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q11",
+          "question": "What is the waterproof breathability rating of the StormShell jacket?",
+          "gold_answer": "20,000mm/20,000g",
+          "predicted_answer": "The StormShell jacket is a 3-layer waterproof breathable shell rated 20,000mm/20,000g.",
+          "cited_doc": "jacket-spec",
+          "retrieved_top_k": [
+            "jacket-spec",
+            "tent-spec",
+            "jacket-warranty"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.4211,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q12",
+          "question": "How should the StormShell jacket be washed?",
+          "gold_answer": "Machine wash cold",
+          "predicted_answer": "The StormShell jacket has a lifetime warranty covering delamination and seam failure.",
+          "cited_doc": "jacket-warranty",
+          "retrieved_top_k": [
+            "jacket-warranty",
+            "jacket-care",
+            "jacket-spec"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": false,
+          "answer_correct": false,
+          "token_f1": 0.0,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q13",
+          "question": "What is the free shipping threshold?",
+          "gold_answer": "over $75",
+          "predicted_answer": "Summitline offers free standard shipping on orders over $75.",
+          "cited_doc": "shipping-policy",
+          "retrieved_top_k": [
+            "shipping-policy",
+            "membership",
+            "returns-policy"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.3636,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q14",
+          "question": "How many days do I have to return a product?",
+          "gold_answer": "60 days",
+          "predicted_answer": "Returns are accepted within 60 days for unused products with tags attached.",
+          "cited_doc": "returns-policy",
+          "retrieved_top_k": [
+            "returns-policy",
+            "warranty-general",
+            "jacket-care"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.2857,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q15",
+          "question": "What does the repair program cost?",
+          "gold_answer": "$25 flat rate",
+          "predicted_answer": "The Summitline repair program charges a $25 flat rate plus parts.",
+          "cited_doc": "repair-program",
+          "retrieved_top_k": [
+            "repair-program",
+            "tent-warranty",
+            "membership"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.4286,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q16",
+          "question": "Which EmberStove batch was recalled?",
+          "gold_answer": "ES-2409",
+          "predicted_answer": "Summitline recalled EmberStove units from batch ES-2409 because the piezo igniter may fail.",
+          "cited_doc": "recall-2025",
+          "retrieved_top_k": [
+            "recall-2025",
+            "stove-spec",
+            "stove-safety"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.25,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q17",
+          "question": "How much does Summitline Circle membership cost?",
+          "gold_answer": "$30 per year",
+          "predicted_answer": "Summitline Circle membership costs $30 per year.",
+          "cited_doc": "membership",
+          "retrieved_top_k": [
+            "membership",
+            "tent-warranty",
+            "shipping-policy"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.6,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q18",
+          "question": "Do Summitline gift cards expire?",
+          "gold_answer": "never expire",
+          "predicted_answer": "Summitline gift cards never expire and carry no fees.",
+          "cited_doc": "gift-cards",
+          "retrieved_top_k": [
+            "gift-cards",
+            "jacket-care",
+            "warranty-general"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.3636,
+          "quote_verbatim": true
+        }
+      ]
+    },
+    "tfidf": {
+      "metrics": {
+        "n_questions": 18,
+        "recall_at_k": 1.0,
+        "citation_precision": 0.8333333333333334,
+        "answer_accuracy": 0.7777777777777778,
+        "mean_token_f1": 0.32129444444444444,
+        "quote_fidelity": 1.0
+      },
+      "per_question": [
+        {
+          "id": "q01",
+          "question": "How much does the RidgeTent 2P weigh?",
+          "gold_answer": "1.9 kg",
+          "predicted_answer": "The RidgeTent 2P carries a lifetime warranty against manufacturing defects.",
+          "cited_doc": "tent-warranty",
+          "retrieved_top_k": [
+            "tent-warranty",
+            "tent-care",
+            "tent-spec"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": false,
+          "answer_correct": false,
+          "token_f1": 0.0,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q02",
+          "question": "What is the waterproof rating of the RidgeTent 2P?",
+          "gold_answer": "3000mm waterproof rating",
+          "predicted_answer": "It uses 20D ripstop nylon with a 3000mm waterproof rating.",
+          "cited_doc": "tent-spec",
+          "retrieved_top_k": [
+            "tent-spec",
+            "jacket-spec",
+            "tent-warranty"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.4615,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q03",
+          "question": "How long does it take to pitch the RidgeTent 2P?",
+          "gold_answer": "5 minutes",
+          "predicted_answer": "The RidgeTent 2P carries a lifetime warranty against manufacturing defects.",
+          "cited_doc": "tent-warranty",
+          "retrieved_top_k": [
+            "tent-warranty",
+            "tent-setup",
+            "tent-care"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": false,
+          "answer_correct": false,
+          "token_f1": 0.0,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q04",
+          "question": "What does the RidgeTent 2P warranty exclude?",
+          "gold_answer": "UV damage or misuse",
+          "predicted_answer": "The RidgeTent 2P carries a lifetime warranty against manufacturing defects.",
+          "cited_doc": "tent-warranty",
+          "retrieved_top_k": [
+            "tent-warranty",
+            "jacket-warranty",
+            "tent-care"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": false,
+          "token_f1": 0.0,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q05",
+          "question": "What capacity is the TrailPack 45?",
+          "gold_answer": "45 liter",
+          "predicted_answer": "The TrailPack 45 is a 45 liter backpack weighing 1.4 kg.",
+          "cited_doc": "pack-spec",
+          "retrieved_top_k": [
+            "pack-spec",
+            "pack-fit",
+            "pack-warranty"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.2857,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q06",
+          "question": "How long is the TrailPack 45 warranty?",
+          "gold_answer": "5 year warranty",
+          "predicted_answer": "The TrailPack 45 has a 5 year warranty covering zippers and seams.",
+          "cited_doc": "pack-warranty",
+          "retrieved_top_k": [
+            "pack-warranty",
+            "pack-spec",
+            "pack-fit"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.4,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q07",
+          "question": "How long does the EmberStove take to boil a liter of water?",
+          "gold_answer": "3.5 minutes",
+          "predicted_answer": "The EmberStove weighs 98 g and boils 1 liter of water in 3.5 minutes.",
+          "cited_doc": "stove-spec",
+          "retrieved_top_k": [
+            "stove-spec",
+            "tent-warranty",
+            "recall-2025"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.3333,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q08",
+          "question": "What kind of canister does the EmberStove use?",
+          "gold_answer": "isobutane canisters",
+          "predicted_answer": "It works with standard isobutane canisters.",
+          "cited_doc": "stove-spec",
+          "retrieved_top_k": [
+            "stove-spec",
+            "stove-safety",
+            "stove-fuel"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.5,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q09",
+          "question": "Can the EmberStove be used inside a tent?",
+          "gold_answer": "Never use the EmberStove inside a tent",
+          "predicted_answer": "Never use the EmberStove inside a tent or enclosed space.",
+          "cited_doc": "stove-safety",
+          "retrieved_top_k": [
+            "stove-safety",
+            "tent-spec",
+            "recall-2025"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.8235,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q10",
+          "question": "How long does a 230g canister last on the EmberStove?",
+          "gold_answer": "60 minutes",
+          "predicted_answer": "A 230g isobutane canister lasts about 60 minutes on high with the EmberStove.",
+          "cited_doc": "stove-fuel",
+          "retrieved_top_k": [
+            "stove-fuel",
+            "tent-warranty",
+            "stove-safety"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.2667,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q11",
+          "question": "What is the waterproof breathability rating of the StormShell jacket?",
+          "gold_answer": "20,000mm/20,000g",
+          "predicted_answer": "The StormShell jacket is a 3-layer waterproof breathable shell rated 20,000mm/20,000g.",
+          "cited_doc": "jacket-spec",
+          "retrieved_top_k": [
+            "jacket-spec",
+            "tent-spec",
+            "jacket-warranty"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.4211,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q12",
+          "question": "How should the StormShell jacket be washed?",
+          "gold_answer": "Machine wash cold",
+          "predicted_answer": "The StormShell jacket has a lifetime warranty covering delamination and seam failure.",
+          "cited_doc": "jacket-warranty",
+          "retrieved_top_k": [
+            "jacket-warranty",
+            "pack-fit",
+            "jacket-care"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": false,
+          "answer_correct": false,
+          "token_f1": 0.0,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q13",
+          "question": "What is the free shipping threshold?",
+          "gold_answer": "over $75",
+          "predicted_answer": "Summitline offers free standard shipping on orders over $75.",
+          "cited_doc": "shipping-policy",
+          "retrieved_top_k": [
+            "shipping-policy",
+            "membership",
+            "jacket-spec"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.3636,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q14",
+          "question": "How many days do I have to return a product?",
+          "gold_answer": "60 days",
+          "predicted_answer": "Returns are accepted within 60 days for unused products with tags attached.",
+          "cited_doc": "returns-policy",
+          "retrieved_top_k": [
+            "returns-policy",
+            "warranty-general",
+            "jacket-care"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.2857,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q15",
+          "question": "What does the repair program cost?",
+          "gold_answer": "$25 flat rate",
+          "predicted_answer": "The Summitline repair program charges a $25 flat rate plus parts.",
+          "cited_doc": "repair-program",
+          "retrieved_top_k": [
+            "repair-program",
+            "tent-warranty",
+            "pack-warranty"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.4286,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q16",
+          "question": "Which EmberStove batch was recalled?",
+          "gold_answer": "ES-2409",
+          "predicted_answer": "Summitline recalled EmberStove units from batch ES-2409 because the piezo igniter may fail.",
+          "cited_doc": "recall-2025",
+          "retrieved_top_k": [
+            "recall-2025",
+            "stove-spec",
+            "stove-safety"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.25,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q17",
+          "question": "How much does Summitline Circle membership cost?",
+          "gold_answer": "$30 per year",
+          "predicted_answer": "Summitline Circle membership costs $30 per year.",
+          "cited_doc": "membership",
+          "retrieved_top_k": [
+            "membership",
+            "tent-warranty",
+            "shipping-policy"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.6,
+          "quote_verbatim": true
+        },
+        {
+          "id": "q18",
+          "question": "Do Summitline gift cards expire?",
+          "gold_answer": "never expire",
+          "predicted_answer": "Summitline gift cards never expire and carry no fees.",
+          "cited_doc": "gift-cards",
+          "retrieved_top_k": [
+            "gift-cards",
+            "jacket-care",
+            "warranty-general"
+          ],
+          "retrieved_relevant": true,
+          "citation_correct": true,
+          "answer_correct": true,
+          "token_f1": 0.3636,
+          "quote_verbatim": true
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "recall_at_k": -0.0556,
+    "citation_precision": 0.0,
+    "answer_accuracy": 0.0,
+    "mean_token_f1": 0.0,
+    "quote_fidelity": 0.0
+  }
+}
